@@ -1,3 +1,5 @@
-function calcularValorTotalDeLivrosDisponiveis(livros) {
-    return livros.reduce((acc, livro) => acc + livro.preco, 0).toFixed(2)
+function calcularValorTotalDeLivrosDisponiveis(listaDeLivros) {
+  return listaDeLivros
+    .reduce((acumulador, livro) => acumulador + livro.preco, 0)
+    .toFixed(2);
 }
